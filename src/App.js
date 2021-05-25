@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Navbar from './components/Navbar';
 import Particles from 'react-particles-js';
 import { faCircle } from '@fortawesome/free-solid-svg-icons';
+import AboutMe from './components/AboutMe';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
       }} />
       <Navbar />
       <Header />
+      <AboutMe />
       </>
     </div>
   );
