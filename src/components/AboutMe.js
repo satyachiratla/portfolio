@@ -9,6 +9,7 @@ const AboutMe = () => {
                     <div className="photo-wrap mb-5">
                         <img className="profile-img" src={author} alt="author..." />
                     </div>
+                    <h2 className="name">Satya Chiratla</h2>
                 </div>
                 <div className="col-lg-6 col-xm-12">
                     <h2 className="about-heading"> about me</h2>

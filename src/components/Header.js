@@ -8,7 +8,7 @@ const Header = () => {
         <h1> MERN STACK DEVELOPER </h1>
         <Typed 
         className="typed-text"
-        strings={["Web Design", "Web Developement"]}
+        strings={["Web Developement", "Frontend", "Backend"]}
         typeSpeed={40}
         backSpeed={60}
         loop />

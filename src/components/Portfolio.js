@@ -1,6 +1,7 @@
 import React from "react";
 import Burger from "../assets/burger.jpg";
 import Places from "../assets/places.png";
+import Profile from '../assets/portfolio.png';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearchPlus } from "@fortawesome/free-solid-svg-icons";
@@ -54,6 +55,28 @@ const Portfolio = () => {
         fadeInSpeed: 500
     }
 
+    const openPopUpBoxPortfolio = () => {
+      const content = (
+          <>
+          <img className="portfolio-image-popupbox" src={Profile} alt="profile.." />
+          <p>My Profile</p>
+          <b>GitHub:</b> <a href className="hyper-link" onClick={() => window.open("")}></a>
+          <br />
+          <b>Demo:</b> <a href className="hyper-link" onClick={() => window.open("")}></a>
+          </>
+      )
+      PopupboxManager.open({ content });
+  }
+
+  const popUpBoxConfigurePortfolio = {
+      titleBar: {
+          enable: true,
+          text: 'Portfolio Project'
+      },
+      fadeIn: true,
+      fadeInSpeed: 500
+  }
+
   return (
     <div className="portfolio-wrapper">
       <div className="container">
@@ -70,10 +93,17 @@ const Portfolio = () => {
           <div className="overflow"></div>
           <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
         </div>
+         {/* , */}
+         <div className="portfolio-img-box" onClick={openPopUpBoxPortfolio}>
+          <img className="portfolio-img" src={Profile} alt="portfolio..." />
+          <div className="overflow"></div>
+          <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
+        </div>
       </div>
       </div>
       <PopupboxContainer {...popUpBoxConfigureBurger} />
       <PopupboxContainer {...popUpBoxConfigurePlaces} />
+      <PopupboxContainer {...popUpBoxConfigurePortfolio} />
     </div>
   );
 };
