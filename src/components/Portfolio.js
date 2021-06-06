@@ -2,6 +2,7 @@ import React from "react";
 import Burger from "../assets/burger.jpg";
 import Places from "../assets/places.png";
 import Profile from '../assets/portfolio.png';
+import search from '../assets/search-plus.svg';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearchPlus } from "@fortawesome/free-solid-svg-icons";
@@ -85,18 +86,21 @@ const Portfolio = () => {
         <div className="portfolio-img-box" onClick={openPopUpBoxBurger}>
           <img className="portfolio-img" src={Burger} alt="burger..." />
           <div className="overflow"></div>
+          <img className="search" src={search} alt="searchPlus.." />
           <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
         </div>
         {/* , */}
         <div className="portfolio-img-box" onClick={openPopUpBoxPlaces}>
           <img className="portfolio-img" src={Places} alt="places..." />
           <div className="overflow"></div>
+          <img className="search" src={search} alt="searchPlus.." />
           <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
         </div>
          {/* , */}
          <div className="portfolio-img-box" onClick={openPopUpBoxPortfolio}>
           <img className="portfolio-img" src={Profile} alt="portfolio..." />
           <div className="overflow"></div>
+          <img className="search" src={search} alt="searchPlus.." />
           <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
         </div>
       </div>
