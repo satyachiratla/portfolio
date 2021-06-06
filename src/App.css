@@ -367,6 +367,21 @@ nav ul li {
   margin-top: 7rem;
 }
 
+.search {
+  height: 30px;
+  position: absolute;
+  margin-left: -8rem;
+  margin-top: 3.6rem;
+  color: var(--primary-orange);
+  opacity: 0;
+}
+
+.portfolio-img-box:hover .search {
+  opacity: 70%;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
 /******* OVERFLOW ******/
 .portfolio-image-popupbox {
   width: 45rem;
